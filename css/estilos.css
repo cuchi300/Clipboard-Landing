@@ -1,0 +1,327 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.8rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media (min-width: 768px) {
+    body{
+        background-image: url(../images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+.contenedor{
+    width: min(85%, 120rem);
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .contenedor{
+        width: 100%;
+    }
+}
+a{
+    text-decoration: none;
+}
+h1 {
+    font-size: 3.8rem;
+    color: var(--Dark-Grayish-Blue);
+}
+h2{
+    font-size: 3.2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+h3{
+    font-size: 2.8rem;
+    color: var(--Dark-Grayish-Blue);
+}
+h4{
+    font-size: 2.2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+p{
+    color: var(--Grayish-Blue);
+}
+img{
+    max-width: 100%;
+}
+/* BODY */
+/* HEADER */
+.titulo {
+    text-align: center;
+    margin-top: 12rem;
+}
+@media (min-width: 768px) {
+    .titulo{
+        width: 65%;
+        margin: 12rem auto 0;
+    }
+}
+.titulo h1 {
+    font-size: 3rem;
+    margin-top: 7rem;
+}
+@media (min-width: 768px) {
+    .titulo h1{
+        font-size: 4rem;
+    }
+}
+.titulo p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+}
+.link-download{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 17rem;
+}
+@media (min-width: 768px) {
+    .link-download{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.link-download a{
+    padding: 1.5rem;
+    color: #fff;
+    border-radius: 3rem;
+    transition: 0.5s;
+}
+@media (min-width: 768px) {
+    .link-download a {
+        width: 30%;
+    }
+}
+.link-download a:hover{
+    opacity: 80%;
+}
+.link-download .cyan{
+    box-shadow: 0px 4px 2px -1px rgb(50, 151, 117);
+    background-color: var(--Strong-Cyan);
+}
+.link-download .blue{
+    box-shadow: 0px 4px 2px -1px rgb(63, 105, 153);
+    background-color: var(--Light-Blue);
+}
+.clip {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .clip{
+        width: 58%;
+        margin: auto;
+    }
+    .clip h3{
+        font-size: 3.3rem;
+    }
+}
+.clip p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 8rem;
+}
+/* TERMINA HEADER */
+/* MAIN */
+/* COMPUTER */
+.computer{
+    display: grid;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .computer {
+        grid-template-columns: 750px 250px;
+        margin-bottom: 8rem;
+    }
+}
+.imagen-computer {
+    background-image: url(../images/image-computer.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 35rem;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .imagen-computer {
+        height: 50rem;
+        background-position: -3rem;
+        background-size: contain;
+    }
+}
+.container-text{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 12rem;
+}
+@media (min-width: 768px) {
+    .container-text{
+        text-align: left;
+        margin-top: 7rem;
+    }
+}
+.text h4{
+    margin: 0;
+}
+.text p{
+    font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+    .text p{
+        font-size: 1.4rem;
+    }
+}
+/* TERMINA COMPUTER */
+.imagen-devices{
+    background-image: url(../images/image-devices.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 30rem;
+}
+@media (min-width: 768px) {
+    .imagen-devices{
+        height: 55rem;
+        background-position: center;
+    }
+}
+/* WORKFLOW */
+.container-icons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 10rem;
+}
+@media (min-width: 768px) {
+    .container-icons{
+        flex-direction: row;
+        width: 80%;
+        align-items: baseline;
+        margin: 0 auto 10rem;
+    }
+}
+.icon {
+    width: 50%;
+}
+.icon p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+/* TERMINA WORKFLOW */
+/* MARCAS */
+.marcas {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 14rem;
+}
+@media (min-width: 768px) {
+    .marcas {
+        flex-direction: row;
+        justify-content: center;
+        width: 35%;
+        margin: 0 auto 14rem;
+    }
+}
+.marcas img {
+    width: max-content;
+    margin: auto;
+}
+/* TERMINA MARCAS */
+/* FOOTER */
+.footer {
+    background-color: rgba(243, 240, 240, 0.5);
+}
+.footer-header{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .footer-header{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 0;
+    }
+}
+.footer-header img {
+    width: 5rem;
+}
+.list {
+    text-align: center;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .list {
+        display: flex;
+        align-items: baseline;
+        margin-top: 4rem;
+        gap: 5rem;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+.list li{
+    list-style: none;
+}
+.list li p{
+    margin-bottom: 3rem;
+}
+.list li a{
+    color: var(--Dark-Grayish-Blue);
+    transition: 0.5s;
+}
+.list li a:hover{
+    color: var(--Strong-Cyan);
+}
+.redes{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.redes i {
+    font-size: 2.7rem;
+    color: var(--Dark-Grayish-Blue);
+    transition: 0.5s;
+}
+.redes i:hover{
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+.attribution {
+    font-size: 1.6rem;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+}
+@media (min-width: 768px) {
+    .attribution{
+        padding-top: 0;
+    }
+}
+.attribution a{
+    color: var(--Strong-Cyan);
+    font-weight: bold;
+}
